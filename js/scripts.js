@@ -9,6 +9,11 @@ $(document).ready(function() {
 
     $(".answer").show();
 
+    var flavors = ['strawberry', 'vanilla', 'chocolate'];
+    flavors.forEach(function(flavor) {
+  });
+
+
   event.preventDefault();
   });
 });
