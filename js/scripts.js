@@ -1,20 +1,35 @@
+// $(document).ready(function() {
+//   $("button").click(function(event){
+//
+//     var blanks = ["movie", "book", "animal", "color"];
+//     blanks.forEach(function(blank) {
+//       var userInput = $("input#" + blank).val();
+//       $("." + blank).text(userInput);
+//     });
+//
+//     $(".answer").show();
+//
+//     event.preventDefault();
+//   });
+//
+//   var flavors = ['strawberry', 'vanilla', 'chocolate'];
+//   flavors.forEach(function(flavor) {
+//     $('.flavors').append('<p>' + flavor + '</p>');
+//   });
+//
+//
+// });
+
 $(document).ready(function() {
   $("button").click(function(event){
 
     var blanks = ["movie", "book", "animal", "color"];
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
+       $('.flavors').append('<p>' + userInput + '</p>');
     });
 
-    $(".answer").show();
-
-    var flavors = ['strawberry', 'vanilla', 'chocolate'];
-    flavors.forEach(function(flavor) {
-  });
-
-
-  event.preventDefault();
+    event.preventDefault();
   });
 });
 
